@@ -10,4 +10,6 @@ return require('packer').startup(function(use)
   use {'nvim-lualine/lualine.nvim',requires = { 'nvim-tree/nvim-web-devicons', opt = true }}
   use 'Pocco81/auto-save.nvim'
   use 'm4xshen/autoclose.nvim'
+  use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
+  use 'norcalli/nvim-colorizer.lua'
 end)
