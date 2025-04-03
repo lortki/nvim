@@ -8,6 +8,7 @@ vim.opt.expandtab = true
 vim.opt.smartindent = true
 
 vim.opt.guicursor = ''
+vim.opt.cursorline = true
 
 vim.opt.scrolloff = 12
 
