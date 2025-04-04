@@ -4,7 +4,7 @@ require("catppuccin").setup({
         light = "latte",
         dark = "mocha",
     },
-    transparent_background = true, -- disables setting the background color.
+    transparent_background = false, -- disables setting the background color.
     show_end_of_buffer = false, -- shows the '~' characters after the end of buffers
     term_colors = false, -- sets terminal colors (e.g. `g:terminal_color_0`)
     dim_inactive = {
@@ -30,7 +30,13 @@ require("catppuccin").setup({
         operators = {},
         -- miscs = {}, -- Uncomment to turn off hard-coded styles
     },
-    color_overrides = {},
+    color_overrides = {
+        mocha = {
+            base = "#000000",
+            mantle = "#000000",
+            crust = "#000000",
+        },
+    },
     custom_highlights = {},
     default_integrations = true,
     integrations = {
