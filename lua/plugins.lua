@@ -1,9 +1,9 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
+  use 'wbthomason/packer.nvim'
   use 'nvim-tree/nvim-web-devicons' -- dependencies
   use 'lewis6991/gitsigns.nvim' -- dependencies
-  use 'wbthomason/packer.nvim'
   use {'catppuccin/nvim', as = 'catppuccin'}
   use {'nvim-tree/nvim-tree.lua' }
   use {'nvim-telescope/telescope.nvim', tag = '0.1.8',requires = { {'nvim-lua/plenary.nvim'} }}
